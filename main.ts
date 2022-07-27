@@ -660,7 +660,17 @@ namespace ppw {
     // *************************** [Subcategory] Others *************************** //
 
     //% subcategory="Other"
-    //% blockId=infrared_on_ir_button
-    //% block="on IR button"
+    //% blockId=other_test
+    //% block="show me the block"
     //% weight=100
+
+    export function writeString(str: string) {
+        for (let i = 0; i < str.length; i++) {
+            if (charX > displayWidth - 6) {
+                newLine()
+            }
+            drawChar(charX, charY, str.charAt(i))
+            charX += 6
+        }
+    }
 }
