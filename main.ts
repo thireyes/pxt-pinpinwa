@@ -16,7 +16,7 @@ enum PingUnit {
  * PPW intelligent building blocks utilities
  */
 
-//% weight=10 color=#E94709 icon="\uf38d" block="PPW"
+//% weight=10 color=#E94709 icon="\uf6ad" block="PPW"
 
 namespace ppw { 
 
