@@ -10,6 +10,14 @@ enum PingUnit {
     Inches
 }
 
+// emum for c33 IR Receiver
+
+const enum IrButtonAction {
+    //% block="pressed"
+    Pressed = 0,
+    //% block="released"
+    Released = 1,
+  }
 
 
 /**
@@ -848,7 +856,6 @@ namespace ppw {
     //% group="C33 IR Receiver"
     //% blockId=infrared_on_ir_datagram
     //% block="on IR datagram received"
-    //% group="Datagram"
     //% weight=200
     export function onIrDatagram(handler: () => void) {
         control.onEvent(
@@ -868,7 +875,6 @@ namespace ppw {
     //% group="C33 IR Receiver"
     //% blockId=infrared_ir_datagram
     //% block="IR datagram"
-    //% group="Datagram"
     //% weight=130
     export function irDatagram(): string {
         if (!irState) {
@@ -888,7 +894,6 @@ namespace ppw {
     //% group="C33 IR Receiver"
     //% blockId=infrared_was_any_ir_datagram_received
     //% block="IR data was received"
-    //% group="Datagram"
     //% weight=190
     export function wasIrDataReceived(): boolean {
         if (!irState) {
