@@ -656,4 +656,11 @@ namespace ppw {
         loadPercent = 0
         clear()
     }
+
+    // *************************** [Subcategory] Others *************************** //
+
+    //% subcategory="Other"
+    //% blockId=infrared_on_ir_button
+    //% block="on IR button"
+    //% weight=100
 }
