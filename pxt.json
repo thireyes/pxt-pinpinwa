@@ -1,6 +1,8 @@
 {
-    "name": "无标题",
-    "description": "",
+    "name": "pinpinwa",
+    "Version":"v0.0.1",
+    "description": "A micro:bit extension for PPW intelligent building blocks",
+    "license": "MIT",
     "dependencies": {
         "core": "*",
         "radio": "*",
