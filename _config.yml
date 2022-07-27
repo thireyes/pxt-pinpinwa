@@ -1,8 +1,13 @@
-makecode:
-  target: microbit
-  platform: microbit
-  home_url: https://makecode.microbit.org/
-theme: jekyll-theme-slate
-include:
-  - assets
-  - README.md
+language: node_js
+node_js:
+    - "8.9.4"
+script:
+    - "npm install -g pxt"
+    - "pxt target microbit"
+    - "pxt install"
+    - "pxt build"
+sudo: false
+cache:
+    directories:
+    - npm_modules
+    - pxt_modules
