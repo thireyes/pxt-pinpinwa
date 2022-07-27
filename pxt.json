@@ -10,6 +10,7 @@
     },
     "files": [
         "main.ts",
+        "irControllerDefinition.ts",
         "README.md"
     ],
     "testFiles": [
