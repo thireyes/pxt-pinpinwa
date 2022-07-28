@@ -24,7 +24,7 @@ const enum IrButtonAction {
  * PPW intelligent building blocks utilities
  */
 
-//% weight=10 color=#00BC9D icon="\uf6ad" block="PPW"
+//% weight=10 color=#00BC9D icon="\uf295" block="PPW"
 
 namespace ppw { 
 
@@ -108,7 +108,7 @@ namespace ppw {
     }
     //% subcategory="C81 OLED"
     //% block="clear OLED display"
-    //% color=#1CBBFF
+    //% color=#33A1C9
     //% weight=83
     export function clear() {
         loadStarted = false
@@ -194,7 +194,7 @@ namespace ppw {
     //% subcategory="C81 OLED"
     //% block="draw loading bar at $percent percent"
     //% percent.min=0 percent.max=100
-    //% color=#1CBBFF
+    //% color=#33A1C9
     //% weight=82
     export function drawLoading(percent: number) {
         if (loadStarted) {
@@ -209,7 +209,7 @@ namespace ppw {
 
     //% subcategory="C81 OLED"
     //% block="show (without newline) string $str"
-    //% color=#1CBBFF
+    //% color=#33A1C9
     //% weight=86
     export function writeString(str: string) {
         for (let i = 0; i < str.length; i++) {
@@ -223,7 +223,7 @@ namespace ppw {
 
     //% subcategory="C81 OLED"
     //% block="show (without newline) number $n"
-    //% color=#1CBBFF
+    //% color=#33A1C9
     //% weight=85
     export function writeNum(n: number) {
         let numString = n.toString()
@@ -232,7 +232,7 @@ namespace ppw {
 
     //% subcategory="C81 OLED"
     //% block="show string $str"
-    //% color=#1CBBFF
+    //% color=#33A1C9
     //% weight=88
     export function writeStringNewLine(str: string) {
         writeString(str)
@@ -241,7 +241,7 @@ namespace ppw {
 
     //% subcategory="C81 OLED"
     //% block="show number $n"
-    //% color=#1CBBFF
+    //% color=#33A1C9
     //% weight=87
     export function writeNumNewLine(n: number) {
         writeNum(n)
@@ -250,7 +250,7 @@ namespace ppw {
 
     //% subcategory="C81 OLED"
     //% block="insert newline"
-    //% color=#1CBBFF
+    //% color=#33A1C9
     //% weight=84
     export function newLine() {
         charY++
@@ -331,7 +331,7 @@ namespace ppw {
     //% y0.defl=0
     //% x1.defl=20
     //% y1.defl=20
-    ///% color=#1CBBFF
+    ///% color=#33A1C9
     //% weight=81
     export function drawLine(x0: number, y0: number, x1: number, y1: number) {
         let pixels: Array<Array<number>> = []
@@ -374,7 +374,7 @@ namespace ppw {
     //% y0.defl=0
     //% x1.defl=20
     //% y1.defl=20
-    //% color=#1CBBFF
+    //% color=#33A1C9
     //% weight=80
     export function drawRectangle(x0: number, y0: number, x1: number, y1: number) {
         drawLine(x0, y0, x1, y0)
@@ -387,7 +387,7 @@ namespace ppw {
     //% block="initialize OLED with width $width height $height"
     //% width.defl=128
     //% height.defl=64
-    //% color=#1CBBFF
+    //% color=#33A1C9
     //% weight=89
     export function init(width: number, height: number) {
         command(SSD1306_DISPLAYOFF);
