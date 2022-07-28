@@ -105,6 +105,7 @@ namespace ppw {
         buf[1] = cmd
         pins.i2cWriteBuffer(chipAdress, buf, false)
     }
+    //% subcategory="C81 OLED"
     //% block="clear OLED display"
     //% group="C81 OLED"
     //% weight=83
@@ -189,6 +190,7 @@ namespace ppw {
         loadPercent = num
     }
 
+    //% subcategory="C81 OLED"
     //% block="draw loading bar at $percent percent"
     //% percent.min=0 percent.max=100
     //% group="C81 OLED"
@@ -204,6 +206,7 @@ namespace ppw {
     }
 
 
+    //% subcategory="C81 OLED"
     //% block="show (without newline) string $str"
     //% group="C81 OLED"
     //% weight=86
@@ -216,6 +219,8 @@ namespace ppw {
             charX += 6
         }
     }
+
+    //% subcategory="C81 OLED"
     //% block="show (without newline) number $n"
     //% group="C81 OLED"
     //% weight=85
@@ -223,6 +228,8 @@ namespace ppw {
         let numString = n.toString()
         writeString(numString)
     }
+
+    //% subcategory="C81 OLED"
     //% block="show string $str"
     //% group="C81 OLED"
     //% weight=88
@@ -230,6 +237,8 @@ namespace ppw {
         writeString(str)
         newLine()
     }
+
+    //% subcategory="C81 OLED"
     //% block="show number $n"
     //% group="C81 OLED"
     //% weight=87
@@ -237,6 +246,8 @@ namespace ppw {
         writeNum(n)
         newLine()
     }
+
+    //% subcategory="C81 OLED"
     //% block="insert newline"
     //% group="C81 OLED"
     //% weight=84
@@ -313,6 +324,7 @@ namespace ppw {
         }
     }
 
+    //% subcategory="C81 OLED"
     //% block="draw line from:|x: $x0 y: $y0 to| x: $x1 y: $y1"
     //% x0.defl=0
     //% y0.defl=0
@@ -355,6 +367,7 @@ namespace ppw {
         drawShape(pixels)
     }
 
+    //% subcategory="C81 OLED"
     //% block="draw rectangle from:|x: $x0 y: $y0 to| x: $x1 y: $y1"
     //% x0.defl=0
     //% y0.defl=0
@@ -368,6 +381,8 @@ namespace ppw {
         drawLine(x0, y0, x0, y1)
         drawLine(x1, y0, x1, y1)
     }
+
+    //% subcategory="C81 OLED"
     //% block="initialize OLED with width $width height $height"
     //% width.defl=128
     //% height.defl=64
@@ -759,7 +774,7 @@ namespace ppw {
      * Connects to the IR receiver module at the specified pin.
      * @param pin IR receiver pin, eg: DigitalPin.P0
      */
-    //% subcategory="More"
+    //% subcategory="C33 IR Recv"
     //% group="C33 IR Receiver"
     //% blockId="infrared_connect_receiver"
     //% block="connect IR receiver at pin %pin"
@@ -852,7 +867,7 @@ namespace ppw {
      * Do something when an IR datagram is received.
      * @param handler body code to run when the event is raised
      */
-    //% subcategory="More"
+    //% subcategory="C33 IR Recv"
     //% group="C33 IR Receiver"
     //% blockId=infrared_on_ir_datagram
     //% block="on IR datagram received"
@@ -871,7 +886,7 @@ namespace ppw {
      * Returns the IR datagram as 32-bit hexadecimal string.
      * The last received datagram is returned or "0x00000000" if no data has been received yet.
      */
-    //% subcategory="More"
+    //% subcategory="C33 IR Recv"
     //% group="C33 IR Receiver"
     //% blockId=infrared_ir_datagram
     //% block="IR datagram"
@@ -890,7 +905,7 @@ namespace ppw {
     /**
      * Returns true if any IR data was received since the last call of this function. False otherwise.
      */
-    //% subcategory="More"
+    //% subcategory="C33 IR Recv"
     //% group="C33 IR Receiver"
     //% blockId=infrared_was_any_ir_datagram_received
     //% block="IR data was received"
@@ -914,7 +929,7 @@ namespace ppw {
      * @param action the trigger action
      * @param handler body code to run when the event is raised
      */
-    //% subcategory="More"
+    //% subcategory="C33 IR Recv"
     //% group="Controller"
     //% blockId=infrared_on_ir_button
     //% block="on IR button | %button | %action"
@@ -941,7 +956,7 @@ namespace ppw {
     /**
      * Returns the code of the IR button that was pressed last. Returns -1 (IrButton.Any) if no button has been pressed yet.
      */
-    //% subcategory="More"
+    //% subcategory="C33 IR Recv"
     //% group="Controller"
     //% blockId=infrared_ir_button_pressed
     //% block="IR button"
@@ -957,7 +972,7 @@ namespace ppw {
      * Returns the command code of a specific IR button.
      * @param button the button
      */
-    //% subcategory="More"
+    //% subcategory="C33 IR Recv"
     //% group="Controller"
     //% blockId=infrared_button_code
     //% button.fieldEditor="gridpicker"
