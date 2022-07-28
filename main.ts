@@ -30,6 +30,8 @@ namespace ppw {
 
     // *************************** namespace's main blocks *************************** //
 
+    // *************************** [Subcategory] C32 Ultrasonic *************************** //
+
     // ***************** block for c32 ultrasonic distance ***************** //
     /**
      * Send a ping and get the echo time (in microseconds) as a result
@@ -39,7 +41,7 @@ namespace ppw {
      * @param maxCmDistance maximum distance in centimeters (default is 500)
     */
     //% subcategory="C32 Ultrasonic"
-    //% color=#00979D
+    //% color=#7C965A
     //% blockId=ultrasonic_ping
     //% block="ping trig %trig|echo %echo|unit %unit"
     //% weight=30
@@ -61,6 +63,8 @@ namespace ppw {
             default: return d ;
         }
     }
+
+    // *************************** [Subcategory] C81 OLED *************************** //
 
     // ***************** block for c81 OLED ***************** //
 
@@ -681,7 +685,7 @@ namespace ppw {
         clear()
     }
 
-    // *************************** [Subcategory] Others *************************** //
+    // *************************** [Subcategory] C33 IR Recv *************************** //
 
     // ***************** block for c33 IR Receiver ***************** //
 
