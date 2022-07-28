@@ -24,7 +24,7 @@ const enum IrButtonAction {
  * PPW intelligent building blocks utilities
  */
 
-//% weight=10 color=#E94709 icon="\uf6ad" block="PPW"
+//% weight=10 color=#00BC9D icon="\uf6ad" block="PPW"
 
 namespace ppw { 
 
@@ -37,10 +37,11 @@ namespace ppw {
      * @param echo echo pin
      * @param unit desired conversion unit
      * @param maxCmDistance maximum distance in centimeters (default is 500)
-     */
+    */
+    //% subcategory="C32 Ultrasonic"
+    //% color=#00979D
     //% blockId=ultrasonic_ping
     //% block="ping trig %trig|echo %echo|unit %unit"
-    //% group="C32 Ultrasonic"
     //% weight=30
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
         // send pulse
@@ -107,7 +108,7 @@ namespace ppw {
     }
     //% subcategory="C81 OLED"
     //% block="clear OLED display"
-    //% group="C81 OLED"
+    //% color=#1CBBFF
     //% weight=83
     export function clear() {
         loadStarted = false
@@ -193,7 +194,7 @@ namespace ppw {
     //% subcategory="C81 OLED"
     //% block="draw loading bar at $percent percent"
     //% percent.min=0 percent.max=100
-    //% group="C81 OLED"
+    //% color=#1CBBFF
     //% weight=82
     export function drawLoading(percent: number) {
         if (loadStarted) {
@@ -208,7 +209,7 @@ namespace ppw {
 
     //% subcategory="C81 OLED"
     //% block="show (without newline) string $str"
-    //% group="C81 OLED"
+    //% color=#1CBBFF
     //% weight=86
     export function writeString(str: string) {
         for (let i = 0; i < str.length; i++) {
@@ -222,7 +223,7 @@ namespace ppw {
 
     //% subcategory="C81 OLED"
     //% block="show (without newline) number $n"
-    //% group="C81 OLED"
+    //% color=#1CBBFF
     //% weight=85
     export function writeNum(n: number) {
         let numString = n.toString()
@@ -231,7 +232,7 @@ namespace ppw {
 
     //% subcategory="C81 OLED"
     //% block="show string $str"
-    //% group="C81 OLED"
+    //% color=#1CBBFF
     //% weight=88
     export function writeStringNewLine(str: string) {
         writeString(str)
@@ -240,7 +241,7 @@ namespace ppw {
 
     //% subcategory="C81 OLED"
     //% block="show number $n"
-    //% group="C81 OLED"
+    //% color=#1CBBFF
     //% weight=87
     export function writeNumNewLine(n: number) {
         writeNum(n)
@@ -249,7 +250,7 @@ namespace ppw {
 
     //% subcategory="C81 OLED"
     //% block="insert newline"
-    //% group="C81 OLED"
+    //% color=#1CBBFF
     //% weight=84
     export function newLine() {
         charY++
@@ -330,7 +331,7 @@ namespace ppw {
     //% y0.defl=0
     //% x1.defl=20
     //% y1.defl=20
-    //% group="C81 OLED"
+    ///% color=#1CBBFF
     //% weight=81
     export function drawLine(x0: number, y0: number, x1: number, y1: number) {
         let pixels: Array<Array<number>> = []
@@ -373,7 +374,7 @@ namespace ppw {
     //% y0.defl=0
     //% x1.defl=20
     //% y1.defl=20
-    //% group="C81 OLED"
+    //% color=#1CBBFF
     //% weight=80
     export function drawRectangle(x0: number, y0: number, x1: number, y1: number) {
         drawLine(x0, y0, x1, y0)
@@ -386,7 +387,7 @@ namespace ppw {
     //% block="initialize OLED with width $width height $height"
     //% width.defl=128
     //% height.defl=64
-    //% group="C81 OLED"
+    //% color=#1CBBFF
     //% weight=89
     export function init(width: number, height: number) {
         command(SSD1306_DISPLAYOFF);
@@ -776,6 +777,7 @@ namespace ppw {
      */
     //% subcategory="C33 IR Recv"
     //% group="C33 IR Receiver"
+    //% color=#884898
     //% blockId="infrared_connect_receiver"
     //% block="connect IR receiver at pin %pin"
     //% pin.fieldEditor="gridpicker"
@@ -869,6 +871,7 @@ namespace ppw {
      */
     //% subcategory="C33 IR Recv"
     //% group="C33 IR Receiver"
+    //% color=#884898
     //% blockId=infrared_on_ir_datagram
     //% block="on IR datagram received"
     //% weight=200
@@ -888,6 +891,7 @@ namespace ppw {
      */
     //% subcategory="C33 IR Recv"
     //% group="C33 IR Receiver"
+    //% color=#884898
     //% blockId=infrared_ir_datagram
     //% block="IR datagram"
     //% weight=130
@@ -907,6 +911,7 @@ namespace ppw {
      */
     //% subcategory="C33 IR Recv"
     //% group="C33 IR Receiver"
+    //% color=#884898
     //% blockId=infrared_was_any_ir_datagram_received
     //% block="IR data was received"
     //% weight=190
@@ -931,6 +936,7 @@ namespace ppw {
      */
     //% subcategory="C33 IR Recv"
     //% group="Controller"
+    //% color=#884898
     //% blockId=infrared_on_ir_button
     //% block="on IR button | %button | %action"
     //% button.fieldEditor="gridpicker"
@@ -958,6 +964,7 @@ namespace ppw {
      */
     //% subcategory="C33 IR Recv"
     //% group="Controller"
+    //% color=#884898
     //% blockId=infrared_ir_button_pressed
     //% block="IR button"
     //% weight=150
@@ -974,6 +981,7 @@ namespace ppw {
      */
     //% subcategory="C33 IR Recv"
     //% group="Controller"
+    //% color=#884898
     //% blockId=infrared_button_code
     //% button.fieldEditor="gridpicker"
     //% button.fieldOptions.columns=3
