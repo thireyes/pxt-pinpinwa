@@ -50,8 +50,8 @@
     "ppw.writeString|block": "显示字符串 $str",
     "{id:subcategory}OLED": "C81 OLED",
 
-    "ppw.TM1637LEDs.intensity|block":"亮度",
-    "ppw.showbit|block":"%tm|显示数字 %num |在 %bit",
+    "ppw.TM1637LEDs.intensity|block":"%tm|设置亮度 %val",
+    "TM1637LEDs.showbit|block":"%tm|显示数字 %num |在 %bit",
     "ppw.showNumber|block":"%tm|显示数 %num",
     "ppw.showHex|block":"%tm|显示16进制数 %num",
     "ppw.showDP|block":"%tm|小数点在 %bit|显示 %show",
