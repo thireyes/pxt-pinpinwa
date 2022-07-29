@@ -1046,7 +1046,7 @@ namespace ppw {
             pins.digitalWritePin(this.dio, 0);
             this._ON = 8;
             this.buf = pins.createBuffer(this.count);
-            this.clear();
+            this.tmclear();
         }
 
         /**
@@ -1211,7 +1211,7 @@ namespace ppw {
         //% blockId="TM1637_clear" block="clear %tm"
         //% weight=80 blockGap=8
         //% parts="TM1637"
-        clear() {
+        tmclear() {
             for (let i = 0; i < this.count; i++) {
                 this._dat(i, 0)
                 this.buf[i] = 0
