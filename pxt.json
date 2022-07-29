@@ -11,6 +11,7 @@
     "files": [
         "main.ts",
         "irControllerDefinition.ts",
+        "_locales/zh/pinpinwa-strings.json"
         "README.md"
     ],
     "testFiles": [
