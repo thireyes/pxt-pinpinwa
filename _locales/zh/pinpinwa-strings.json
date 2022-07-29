@@ -51,13 +51,13 @@
     "{id:subcategory}OLED": "C81 OLED",
 
     "ppw.TM1637LEDs.intensity|block":"%tm|设置亮度 %val",
-    "TM1637LEDs.showbit|block":"%tm|显示数字 %num |在 %bit",
-    "ppw.showNumber|block":"%tm|显示数 %num",
-    "ppw.showHex|block":"%tm|显示16进制数 %num",
-    "ppw.showDP|block":"%tm|小数点在 %bit|显示 %show",
-    "ppw.tmclear|block":"清除显示 %tm",
-    "ppw.on|block":"打开 %tm",
-    "ppw.off|block":"关闭 %tm",
+    "ppw.TM1637LEDs.showbit|block":"%tm|显示数字 %num |在 %bit",
+    "ppw.TM1637LEDs.showNumber|block":"%tm|显示数 %num",
+    "ppw.TM1637LEDs.showHex|block":"%tm|显示16进制数 %num",
+    "ppw.TM1637LEDs.showDP|block":"%tm|小数点在 %bit|显示 %show",
+    "ppw.TM1637LEDs.tmclear|block":"清除显示 %tm",
+    "ppw.TM1637LEDs.on|block":"打开 %tm",
+    "ppw.TM1637LEDs.off|block":"关闭 %tm",
     "ppw.create|block":"CLK %clk|DIO %dio|亮度 %intensity|LED位数 %count",
     "{id:subcategory}C82 Digit Tube": "C82 数码管"
 }
