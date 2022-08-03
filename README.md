@@ -189,9 +189,73 @@ basic.forever(() => {
 })
 ```
 
+## C82 Digit Tube
 
+### Wiring Diagram
+![C81 wiring Diagram](https://github.com/thireyes/pxt-pinpinwa/blob/master/c81wiring.png)
 
+### Creat
+create a TM1637 object
 
+```sig
+ppw.create(Digital.Pin14, DigitalPin.P15, 7, 4)
+```
+
+### on
+turn on the display.
+
+```sig
+ppw.on()
+```
+
+### off
+turn off the display.
+
+```sig
+ppw.off()
+```
+
+### tmclear
+clear content of the display.
+
+```sig
+ppw.tmclear()
+```
+
+### showbit
+show a digit number in given position.
+
+```sig
+ppw.showbit(n,b)
+```
+
+### showNumber
+show a interger number in display.
+
+```sig
+ppw.showNumber(n)
+```
+
+### showHex
+show a hex number.
+
+```sig
+ppw.showHex(h)
+```
+
+### showDP
+show or hide dot piont in give bit, bit is dot piont position, [0 - count] show, True will show DP, other will hide it.
+
+```sig
+ppw.showDP(b, true)
+```
+
+### intensity
+set display intensity.
+
+```sig
+ppw.intensity(n) 
+```
 
 
 
