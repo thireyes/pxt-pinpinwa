@@ -2,21 +2,20 @@
 
 A MakeCode extensions for PPW intelligent building blocks.
 
-## Basic usage
 
-### C32 Ultrasonic Distance module
+## C32 Ultrasonic Distance module
 
-#### Wiring Diagram
+### Wiring Diagram
 ![C82 wiring Diagram](https://github.com/thireyes/pxt-pinpinwa/blob/master/c82wiring.png)
 
-#### ping
+### ping
 This package contains a ``ping`` block that can return the distance to an bostacle detected by the ultrasonic.
 
 ```blocks
 ppw.ping(DigitalPin.P15, DigitalPin.P14, PingUnit.Centimeters);
 ```
 
-#### Charting the distance
+### Charting the distance
 
 Use the ``plot bar graph`` block to visualize the distance reported by your C32 Ultrasonic Distance.
 
@@ -26,11 +25,11 @@ basic.forever(() => {
     led.plotBarGraph(p, 0);
 })
 ```
-______
 
-### C33 IR Receiver
 
-#### Connect
+## C33 IR Receiver
+
+### Connect
 
 Connects to the C33 IR Receiver module at the specified pin.
 
@@ -38,7 +37,7 @@ Connects to the C33 IR Receiver module at the specified pin.
 ppw.connectIrReceiver(DigitalPin.P1)
 ```
 
-#### irButton
+### irButton
 
 Returns the code of the IR button that was pressed last. Returns -1 (IrButton.Any) if no button has been pressed yet.
 
@@ -46,7 +45,7 @@ Returns the code of the IR button that was pressed last. Returns -1 (IrButton.An
 ppw.irButton()
 ```
 
-#### onIrDatagram
+### onIrDatagram
 
 Do something when a specific button is pressed or released on the remote control.
 
@@ -54,7 +53,7 @@ Do something when a specific button is pressed or released on the remote control
 ppw.onIrDatagram(() => {})
 ```
 
-#### irDatagram
+### irDatagram
 
 Returns the IR datagram as 32-bit hexadecimal string. The last received datagram is returned or "0x00000000" if no data has been received yet.
 
@@ -62,7 +61,7 @@ Returns the IR datagram as 32-bit hexadecimal string. The last received datagram
 ppw.irDatagram()
 ```
 
-#### wasIrDataReceived
+### wasIrDataReceived
 
 Returns true if any IR data was received since the last call of this function. False otherwise.
 
@@ -70,7 +69,7 @@ Returns true if any IR data was received since the last call of this function. F
 ppw.wasIrDataReceived();
 ```
 
-#### irButtonCode
+### irButtonCode
 
 Returns the command code of a specific IR button.
 
@@ -78,7 +77,7 @@ Returns the command code of a specific IR button.
 ppw.irButtonCode(IrButton.Num9)
 ```
 
-#### MakeCode Example
+### MakeCode Example
 
 ```blocks
 
@@ -98,15 +97,15 @@ ppw.onIrButton(IrButton.OK, IrButtonAction.Released, function () {
     basic.showIcon(IconNames.SmallHeart)
 })
 ```
-______
 
-### C81 OLED
 
-#### Wiring Diagram
+## C81 OLED
+
+### Wiring Diagram
 ![C81 wiring Diagram](https://github.com/thireyes/pxt-pinpinwa/blob/master/c81wiring.png)
 
 
-#### Initialize C81 OLED Display
+### Initialize C81 OLED Display
 
 Sets up the OLED display and prepares it for use by the micro:bit, this block must be placed before any of the ``show`` blocks.
 
@@ -114,70 +113,70 @@ Sets up the OLED display and prepares it for use by the micro:bit, this block mu
 ppw.init(64, 128);
 ```
 
-#### Show String Without Newline
+### Show String Without Newline
 Displays a string on the OLED module without a newline.
 
 ```sig
 ppw.showString1("hello, micro:bit!")
 ```
 
-#### Show String With Newline
+### Show String With Newline
 Displays a string on the OLED module with a newline.
 
 ```sig
 ppw.showString2("hello, micro:bit!")
 ```
 
-#### Show Number Without newline
+### Show Number Without newline
 Displays a number on the OLED module without a newline.
 
 ```sig
 ppw.showNumber1(123)
 ```
 
-#### Show Number With Newline
+### Show Number With Newline
 Displays a number on the OLED module with a newline.
 
 ```sig
 ppw.showNumber2(123)
 ```
 
-#### Clear Display
+### Clear Display
 Clears the display.
 
 ```sig
 ppw.clear()
 ```
 
-#### Draw Outlined Rectangle
+### Draw Outlined Rectangle
 Displays an outline of a rectangle.
 
 ```sig
 ppw.drawRectangle(x,y,w,h)
 ```
 
-#### Draw Outlined Circle
+### Draw Outlined Circle
 Displays an outline of a circle.
 
 ```sig
 ppw.drawCircle(x,y,r)
 ```
 
-#### Draw Line
+### Draw Line
 Displays a line.
 
 ```sig
 ppw.drawLine(x1,y1,x2,y2)
 ```
 
-#### Progress bar
+### Progress bar
 Displays a progress bar with a specified percentage of progress.
 
 ```sig
 ppw.drawLoadingBar(percent)
 ```
 
-#### MakeCode Example: Counter
+### MakeCode Example: Counter
 The following code is a simple counter that displays an increasing number every second.
 
 ```blocks
@@ -189,16 +188,12 @@ basic.forever(() => {
     ppw.showNumber(item)
 })
 ```
-______
 
 
 
 
-<style>
-    hr:nth-of-type(1) {
-        border-width: 2px 0 0 0 !important;
-    }
-</style>
+
+
 
 
 
