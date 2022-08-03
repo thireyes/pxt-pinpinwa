@@ -195,6 +195,9 @@ ______
     hr:nth-of-type{
         border-with: 3px 0 0 0 !import;
     }
+</style>
+
+
 
 ## License
 
