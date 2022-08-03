@@ -23,6 +23,7 @@ basic.forever(() => {
     led.plotBarGraph(p, 0);
 })
 ```
+------
 
 ### C33 IR Receiver
 
@@ -94,23 +95,24 @@ ppw.onIrButton(IrButton.OK, IrButtonAction.Released, function () {
     basic.showIcon(IconNames.SmallHeart)
 })
 ```
+------
 
 ### C81 OLED
 
 #### Wiring Diagram
-
+![C81 wiring Diagram](https://github.com/thireyes/pxt-pinpinwa/blob/master/c81wiring.png)
 
 #### Blocks
 
 ##### Initialize C81 OLED Display
 
-Sets up the OLED display and prepares it for use by the micro:bit.
+Sets up the OLED display and prepares it for use by the micro:bit, this block must be placed before any of the ``show`` blocks.
 
 ```sig
 OLED.init(64, 128);
 ```
 
-This block must be placed before any of the ``show`` blocks.
+
 
 
 
