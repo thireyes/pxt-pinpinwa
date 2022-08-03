@@ -23,7 +23,7 @@ basic.forever(() => {
     led.plotBarGraph(p, 0);
 })
 ```
-------
+______
 
 ### C33 IR Receiver
 
@@ -95,7 +95,7 @@ ppw.onIrButton(IrButton.OK, IrButtonAction.Released, function () {
     basic.showIcon(IconNames.SmallHeart)
 })
 ```
-------
+______
 
 ### C81 OLED
 
@@ -186,7 +186,7 @@ basic.forever(() => {
     ppw.showNumber(item)
 })
 ```
-------
+______
 
 
 
