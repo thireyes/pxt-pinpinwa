@@ -102,19 +102,91 @@ ppw.onIrButton(IrButton.OK, IrButtonAction.Released, function () {
 #### Wiring Diagram
 ![C81 wiring Diagram](https://github.com/thireyes/pxt-pinpinwa/blob/master/c81wiring.png)
 
-#### Blocks
 
-##### Initialize C81 OLED Display
+#### Initialize C81 OLED Display
 
 Sets up the OLED display and prepares it for use by the micro:bit, this block must be placed before any of the ``show`` blocks.
 
 ```sig
-OLED.init(64, 128);
+ppw.init(64, 128);
 ```
 
+#### Show String Without Newline
+Displays a string on the OLED module without a newline.
 
+```sig
+ppw.showString1("hello, micro:bit!")
+```
 
+#### Show String With Newline
+Displays a string on the OLED module with a newline.
 
+```sig
+ppw.showString2("hello, micro:bit!")
+```
+
+#### Show Number Without newline
+Displays a number on the OLED module without a newline.
+
+```sig
+ppw.showNumber1(123)
+```
+
+#### Show Number With Newline
+Displays a number on the OLED module with a newline.
+
+```sig
+ppw.showNumber2(123)
+```
+
+#### Clear Display
+Clears the display.
+
+```sig
+ppw.clear()
+```
+
+#### Draw Outlined Rectangle
+Displays an outline of a rectangle.
+
+```sig
+ppw.drawRectangle(x,y,w,h)
+```
+
+#### Draw Outlined Circle
+Displays an outline of a circle.
+
+```sig
+ppw.drawCircle(x,y,r)
+```
+
+#### Draw Line
+Displays a line.
+
+```sig
+ppw.drawLine(x1,y1,x2,y2)
+```
+
+#### Progress bar
+Displays a progress bar with a specified percentage of progress.
+
+```sig
+ppw.drawLoadingBar(percent)
+```
+
+#### MakeCode Example: Counter
+The following code is a simple counter that displays an increasing number every second.
+
+```blocks
+ppw.init(64, 128)
+let item = 0
+basic.forever(() => {
+    basic.pause(1000)
+    item += 1
+    ppw.showNumber(item)
+})
+```
+------
 
 
 
@@ -129,3 +201,7 @@ MIT
 
 * for PXT/microbit
 
+
+## Footnotes
+
+1.  More information about PPW intelligent electronic building blocks https://www.yuque.com/ppwdocs/en
