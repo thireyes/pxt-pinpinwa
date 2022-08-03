@@ -155,13 +155,6 @@ Displays an outline of a rectangle.
 ppw.drawRectangle(x,y,w,h)
 ```
 
-### Draw Outlined Circle
-Displays an outline of a circle.
-
-```sig
-ppw.drawCircle(x,y,r)
-```
-
 ### Draw Line
 Displays a line.
 
