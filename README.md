@@ -95,8 +95,22 @@ ppw.onIrButton(IrButton.OK, IrButtonAction.Released, function () {
 })
 ```
 
+### C81 OLED
+
+#### Wiring Diagram
 
 
+#### Blocks
+
+##### Initialize C81 OLED Display
+
+Sets up the OLED display and prepares it for use by the micro:bit.
+
+```sig
+OLED.init(64, 128);
+```
+
+This block must be placed before any of the ``show`` blocks.
 
 
 
