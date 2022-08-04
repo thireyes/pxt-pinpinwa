@@ -1171,7 +1171,7 @@ namespace ppw {
           * @param num is a hex number, eg: 0
           */
         //% subcategory="C82 Digit Tube"
-        //% color=#E94709
+        //% color=#FFA300
         //% blockId="TM1637_showhex" block="%tm|show hex number %num"
         //% weight=90 blockGap=8
         //% parts="TM1637"
@@ -1193,7 +1193,7 @@ namespace ppw {
          * @param show is show/hide dp, eg: true
          */
         //% subcategory="C82 Digit Tube"
-        //% color=#E94709
+        //% color=#FFA300
         //% blockId="TM1637_showDP" block="%tm|DotPoint at %bit|show %show"
         //% weight=70 blockGap=8
         //% parts="TM1637"
@@ -1207,7 +1207,7 @@ namespace ppw {
          * clear LED. 
          */
         //% subcategory="C82 Digit Tube"
-        //% color=#E94709
+        //% color=#FFA300
         //% blockId="TM1637_clear" block="clear %tm"
         //% weight=80 blockGap=8
         //% parts="TM1637"
@@ -1222,7 +1222,7 @@ namespace ppw {
          * turn on LED. 
          */
         //% subcategory="C82 Digit Tube"
-        //% color=#E94709
+        //% color=#FFA300
         //% blockId="TM1637_on" block="turn on %tm"
         //% weight=86 blockGap=8
         //% parts="TM1637"
@@ -1236,7 +1236,7 @@ namespace ppw {
          * turn off LED. 
          */
         //% subcategory="C82 Digit Tube"
-        //% color=#E94709
+        //% color=#FFA300
         //% blockId="TM1637_off" block="turn off %tm"
         //% weight=85 blockGap=8
         //% parts="TM1637"
@@ -1255,7 +1255,7 @@ namespace ppw {
      * @param count the count of the LED, eg: 4
      */
     //% subcategory="C82 Digit Tube"
-    //% color=#E94709
+    //% color=#FFA300
     //% weight=200 blockGap=8
     //% blockId="TM1637_create" block="CLK %clk|DIO %dio|intensity %intensity|LED count %count"
     export function create(clk: DigitalPin, dio: DigitalPin, intensity: number, count: number): TM1637LEDs {
