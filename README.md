@@ -219,35 +219,35 @@ ppw.tmclear()
 show a digit number in given position.
 
 ```sig
-ppw.showbit(n,b)
+ppw.showbit(7,2)
 ```
 
 ### showNumber
 show a interger number in display.
 
 ```sig
-ppw.showNumber(n)
+ppw.showNumber(1234)
 ```
 
 ### showHex
 show a hex number.
 
 ```sig
-ppw.showHex(h)
+ppw.showHex(32)
 ```
 
 ### showDP
 show or hide dot piont in give bit, bit is dot piont position, [0 - count] show, True will show DP, other will hide it.
 
 ```sig
-ppw.showDP(b, true)
+ppw.showDP(2, true)
 ```
 
 ### intensity
 set display intensity.
 
 ```sig
-ppw.intensity(n) 
+ppw.intensity(7) 
 ```
 
 
