@@ -6,7 +6,7 @@ A MakeCode extensions for PPW intelligent building blocks.
 ## C32 Ultrasonic Distance module
 
 ### Wiring Diagram
-![C82 wiring Diagram](https://github.com/thireyes/pxt-pinpinwa/blob/master/c82wiring.png)
+![C32 wiring Diagram](https://github.com/thireyes/pxt-pinpinwa/blob/master/c32wiring.png)
 
 ### ping
 This package contains a ``ping`` block that can return the distance to an bostacle detected by the ultrasonic.
@@ -185,7 +185,7 @@ basic.forever(() => {
 ## C82 Digit Tube
 
 ### Wiring Diagram
-![C81 wiring Diagram](https://github.com/thireyes/pxt-pinpinwa/blob/master/c81wiring.png)
+![C82 wiring Diagram](https://github.com/thireyes/pxt-pinpinwa/blob/master/c82wiring.png)
 
 ### Creat
 create a TM1637 object
