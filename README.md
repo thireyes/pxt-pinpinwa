@@ -226,14 +226,14 @@ ppw.showbit(7,2)
 show a interger number in display.
 
 ```sig
-ppw.showNumber(1234)
+ppw.showNumber(1098)
 ```
 
 ### showHex
 show a hex number.
 
 ```sig
-ppw.showHex(32)
+ppw.showHex(1098)
 ```
 
 ### showDP
