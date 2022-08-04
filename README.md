@@ -152,21 +152,21 @@ ppw.clear()
 Displays an outline of a rectangle.
 
 ```sig
-ppw.drawRectangle(x,y,w,h)
+ppw.drawRectangle(30,30,100,50)
 ```
 
 ### Draw Line
 Displays a line.
 
 ```sig
-ppw.drawLine(x1,y1,x2,y2)
+ppw.drawLine(20,20,100,50)
 ```
 
 ### Progress bar
 Displays a progress bar with a specified percentage of progress.
 
 ```sig
-ppw.drawLoadingBar(percent)
+ppw.drawLoadingBar(77)
 ```
 
 ### MakeCode Example: Counter
