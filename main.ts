@@ -1102,7 +1102,7 @@ namespace ppw {
          * @param val the brightness of the TM1637, eg: 7
          */
         //% subcategory="C82 Digit Tube"
-        //% color=#E94709 
+        //% color=#FFA300 
         //% blockId="TM1637_set_intensity" block="%tm|set intensity %val"
         //% weight=50 blockGap=8
         //% parts="TM1637"
@@ -1136,7 +1136,7 @@ namespace ppw {
          * @param bit the position of the LED, eg: 0
          */
         //% subcategory="C82 Digit Tube"
-        //% color=#E94709
+        //% color=#FFA300
         //% blockId="TM1637_showbit" block="%tm|show digit %num |at %bit"
         //% weight=90 blockGap=8
         //% parts="TM1637"
@@ -1150,7 +1150,7 @@ namespace ppw {
           * @param num is a number, eg: 0
           */
         //% subcategory="C82 Digit Tube"
-        //% color=#E94709
+        //% color=#FFA300
         //% blockId="TM1637_shownum" block="%tm|show number %num"
         //% weight=91 blockGap=8
         //% parts="TM1637"
