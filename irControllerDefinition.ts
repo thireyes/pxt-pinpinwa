@@ -17,7 +17,7 @@ const enum IrButton {
   Previous = 0xe0,
   //% block="PLAY"
   Play = 0xa8,
-  //% block="NEXT"
+  //% block="⇥"
   Next = 0x90,
   //% block="0"
   Num0 = 0x68,
